@@ -8,6 +8,7 @@
                 <div class="title text-center wow fadeIn" data-wow-duration="500ms">
                     <h2>{{ with .Site.Data.service.heading }} {{ . }} {{ end }}<span class="color">{{ with .Site.Data.service.headingSpan }} {{ . }} {{ end }}</span></h2>
                     <div class="border-meghna"></div>
+                    {{ with .Site.Data.service.description }}<p>{{ . }}</p>{{ end }}
                 </div>
             </div>
             {{"<!-- /section title -->" | safeHTML }}
